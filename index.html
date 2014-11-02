@@ -314,15 +314,6 @@
 	</section>
 
 	<section>
-	<h2>Substitutability</h2>
-	<div class='left-align'>
-	<p><strong>Substitutability</strong> is a principle of object-oriented programming introduced by BarbaraLiskov in a 1987 conference keynote entitled “Data abstraction and hierarchy”.</p>
-	<br/>
-	<p>In a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S without altering any of the desirable properties of that program.</p>
-	</div>
-	</section>
-
-	<section>
 	<h2>Extending objects</h2>
 	<div class='left-align'>
 		<p>Suppose you wanted an easy way to talk about different types of cars.</p>
@@ -378,6 +369,15 @@
 	myHatch.openHatch();
 
 		</code></pre>
+	</div>
+	</section>
+
+	<section>
+	<h2>Substitutability</h2>
+	<div class='left-align'>
+	<p><strong>Substitutability</strong> is a principle of object-oriented programming introduced by BarbaraLiskov in a 1987 conference keynote entitled “Data abstraction and hierarchy”.</p>
+	<br/>
+	<p>In a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S without altering any of the desirable properties of that program.</p>
 	</div>
 	</section>
 
@@ -475,28 +475,28 @@
 	</section>
 
 	<section>
-	<h2>Refactoring</h2>
-	<div class='left-align'>
-		<p>Once your website code is working correctly, it's a good idea to go back and <strong>refactor</strong> it.  Refactoring is a process developers use to restructure their existing code to make it easier to read.</p>
-		<br/>
-		<p class='fragment'>Although it takes time to refactor your code now, right now is when you're most familiar with what you wrote the first time.</p>
-	</div>
-	</section>
-
-	<section>
-	<h2>Refactoring with OOJS</h2>
+	<h2>Building HTML with OOJS</h2>
 	<div class='left-align'>
 		<p>You can create objects that know how to interact with your website.</p>
 		<pre><code contenteditable class='javascript'>
 	// Assuming Car as defined before
 	Car.prototype.displayOnWebsite = function() {
 	    var $carinfo = $('&lt;p&gt;&lt;/p&gt;');
-	    $carinfo.text('You are buying a ' + this.madel);
+	    $carinfo.text('You are buying a ' + this.model);
 
-	    var $body = $('#listofcars');
-	    $body.append($carinfo);
+	    var $list = $('#listofcars');
+	    $list.append($carinfo);
 	};
 		</code></pre>
+	</div>
+	</section>
+
+	<section>
+	<h2>Refactoring</h2>
+	<div class='left-align'>
+		<p>Once your website code is working correctly, it's a good idea to go back and <strong>refactor</strong> it.  Refactoring is a process developers use to restructure their existing code to make it easier to read.</p>
+		<br/>
+		<p class='fragment'>Although it takes time to refactor your code now, right now is when you're most familiar with what you wrote.</p>
 	</div>
 	</section>
 
