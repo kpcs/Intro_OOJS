@@ -35,13 +35,14 @@
 	<!-- Introduction -->
 	<section>
 		<h3>Intro to Object-Oriented JavaScript</h3>
-		<img src="css/images/gdi_logo_badge.png" alt="Girl Develop It" style='height: 250px; width: 250px;'>
+		<div>Slides: http://bit.ly/gdi-oojs</div>
+		<img src="css/images/gdi_logo_badge.png" alt="Girl Develop It" style='height: 250px; width: 250px; border: 0px;'>
 <br/>
-		<div style='align: center;'>“Object-oriented programming is programming <br/>oriented towards objects.” - my coworker</div>
+		<div style='align: center;'>"Object-oriented programming is programming <br/>oriented towards objects." - my coworker</div>
 	</section>
 
 	<section>
-		<h2>Welcome!</h2>
+		<h3>Welcome!</h3>
 		<div class="left-align">
 			<p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
 			<br/>
@@ -56,7 +57,7 @@
 	</section>
 
 	<section>
-	<h2>Welcome!</h2>
+	<h3>Welcome!</h3>
 	<div class="left-align">
 		<p>Tell us about yourself.</p>
 		<ul>
@@ -69,7 +70,7 @@
 <!-- End Introduction -->
 
 	<section>
-	<h2>What we'll cover today</h2>
+	<h3>What we'll cover today</h3>
 	<div class='left-align'>
 		<ul>
 			<li>What is an object?</li>
@@ -85,39 +86,39 @@
 	</section>
 
 	<section>
-	<h2>Warm up exercises</h2>
+	<h3>Warm up exercises</h3>
 	<div class='left-align'>
 		<p>Goal: Understanding objects</p>
 		<ul>
-			<li>Create an object with a couple properties. For example, you could make a “student” object with the properties “name” and “hometown”.</li>
-			<li>Use console.log() to print out a sentence that includes the properties of that object. For example, “[name] is from [hometown].”</li>
+			<li>Create an object with a couple properties. For example, you could make a "student" object with the properties "name" and "hometown".</li>
+			<li>Use console.log() to print out a sentence that includes the properties of that object. For example, "[name] is from [hometown]."</li>
 		</ul>
 	</div>
 	</section>
 
 	<section>
-	<h2>Warm up exercises</h2>
+	<h3>Warm up exercises</h3>
 	<div class='left-align'>
 		<p>Goal: Understanding functions</p>
 		<ul>
-			<li>Create a function that takes at least one argument. For example, you could make an “announce” function that alerts “Important announcement:” followed by the argument.</li>
-			<li>Call your function with an argument of your choice. For example, you could announce “Dogs are cute”.</li>
+			<li>Create a function that takes at least one argument. For example, you could make an "announce" function that alerts "Important announcement:" followed by the argument.</li>
+			<li>Call your function with an argument of your choice. For example, you could announce "Dogs are cute".</li>
 		</ul>
 	</div>
 	</section>
 
 	<section>
-	<h2>Warm up exercises</h2>
+	<h3>Warm up exercises</h3>
 	<div class='left-align'>
 		<p>Goal: Understanding "this"</p>
 		<ul>
-			<li>In HTML, create a link to the website of your choice. Using jQuery’s .click(), make clicking on the link alert the link’s “href”.</li>
+			<li>In HTML, create a link to the website of your choice. Using a JavaScript "onclick" event, make clicking on the link alert the link’s "href".  [Hint: never used the "onclick" event before, and not sure how to use it? Check out w3schools.com for <a href="http://www.w3schools.com/jsref/event_onclick.as">some documentation and examples</a>]</li>
 		</ul>
 	</div>
 	</section>
 
 	<section>
-	<h2>What is an "Object"?</h2>
+	<h3>What is an "Object"?</h3>
 	<div class='left-align'>
 		<p>In computer science, an <strong>object</strong> is a location in memory having a value and possibly referenced by an identifier. An object can be a variable, function, or data structure. [source: Wikipedia]</p>
 		<pre><code contenteditable class='javscript'>
@@ -133,7 +134,7 @@
 	</section>
 
 	<section>
-	<h2>Attributes and Methods</h2>
+	<h3>Attributes and Methods</h3>
 	<div class='left-align'>
 		<p>When we talk about objects, we're interested in two main concepts:</p>
 		<ul>
@@ -153,7 +154,7 @@
 	</section>
 
 	<section>
-		<h2>Group exercise: Shapes</h2>
+		<h3>Group exercise: Shapes</h3>
 		<div class='left-align'>
 			<p>Think about these geometric shapes:</p>
 		</div>
@@ -169,7 +170,7 @@
 	</section>
 
 	<section>
-		<h2>Class-based inheritance</h2>
+		<h3>Class-based inheritance</h3>
 		<div class='left-align'>
 			<p>Imagine going shopping for a new car.</p>
 			<ul>
@@ -185,12 +186,11 @@
 	</section>
 
 	<section>
-		<h2>Prototypal inheritance</h2>
+		<h3>Prototypal inheritance</h3>
 		<div class='left-align'>
 			<p>Let's imagine another way of shopping for a new car.</p>
 			<ul>
-				<li class='fragment'>You go to the dealer with an old car you already own.</li>
-				<li class='fragment'>You ask the dealer for a newer model of the same car.</li>
+				<li class='fragment'>You go to the dealer with an old car you already own, and you ask the dealer for a newer model of the same car.</li>
 				<li class='fragment'>The color, make, and model of the car are the same, but the handling is better than your old car.</li>
 				<li class='fragment'>You purchase this particular car.</li>
 			</ul>
@@ -201,7 +201,7 @@
 	</section>
 
 	<section>
-	<h2>Creating new objects</h2>
+	<h3>Creating new objects</h3>
 	<div class='left-align'>
 		<p>In JavaScript, we use a <strong>constructor function</strong> to initialize new objects, and we use the <strong>new</strong> keyword to call the constuctor.
 
@@ -221,7 +221,7 @@
 	</section>
 
 	<section>
-	<h2>Adding Variables</h2>
+	<h3>Adding Variables</h3>
 	<div class='left-align'>
 		<pre><code contenteditable class='javscript'>
 	// Create a constructor function for new cars
@@ -245,7 +245,7 @@
 	</section>
 
 	<section>
-	<h2>Extending the prototype</h2>
+	<h3>Extending the prototype</h3>
 	<div class='left-align'>
 		<p>The <strong>prototype</strong> is the collection of all the attributes and methods that the object knows about.</p>
 		<br/>
@@ -255,7 +255,7 @@
 	</section>
 
 	<section>
-	<h2>Extending the Prototype</h2>
+	<h3>Extending the Prototype</h3>
 	<div class='left-align'>
 		<pre><code contenteditable class='javscript'>
 	function Car() {
@@ -279,7 +279,28 @@
 	</section>
 
 	<section>
-	<h2>Putting it all together</h2>
+	<h3>Pro style tip</h3>
+	<div class='left-align'>
+		<p>It's common practice for constructor function names to start with an <strong>uppercase</strong> letter.</p>
+
+		<p>It's common practice for regular function names to start with a <strong>lowercase</strong> letter.</p>
+
+		<pre class='fragment'><code contenteditable class='javscript'>
+	// capitalized function "Car"? This must be a constructor
+	function Car() {
+	    this.odometer = 0;
+	}
+
+	// lowercase function "drive"? This must be a regular function
+	Car.prototype.drive = function() {
+	    this.odometer = this.odometer + 1;
+	}
+		</code></pre>
+	</div>
+	</section>
+
+	<section>
+	<h3>Putting it all together</h3>
 	<div class='left-align'>
 		<pre><code contenteditable class='javscript'>
 	// Create a constructor function for new cars
@@ -303,18 +324,16 @@
 	</section>
 
 	<section>
-	<h2>Coding exercise 1</h2>
+	<h3>Coding exercise 1</h3>
 	<div class='left-align'>
 		<p>Let's make our own constructors and objects! We'll be using an exercise put together by GDI Chicago:</p>
-
-		<p><a target='_blank' href='http://bit.ly/10IsNhJ'>
-			<pre style="font-size: 150%">http://bit.ly/10IsNhJ</pre>
-		</a></p>
+		<br />
+		<div><a target='_blank' href='http://bit.ly/oojs_ex_1'>http://bit.ly/oojs_ex_1</a></div>
 	</div>
 	</section>
 
 	<section>
-	<h2>Extending objects</h2>
+	<h3>Extending objects</h3>
 	<div class='left-align'>
 		<p>Suppose you wanted an easy way to talk about different types of cars.</p>
 		<ul>
@@ -326,7 +345,7 @@
 	</section>
 
 	<section>
-	<h2>Creating a hatchback</h2>
+	<h3>Creating a hatchback</h3>
 	<div class='left-align'>
 		<p>We can create a constructor function for each sub-type of Car that inherits attributes and methods from Car.</p>
 		<pre><code contenteditable class='javscript'>
@@ -347,7 +366,7 @@
 	</section>
 
 	<section>
-	<h2>Creating a hatchback</h2>
+	<h3>Creating a hatchback</h3>
 	<div class='left-align'>
 		<p>We can also create methods specific to Hatchback.</p>
 		<pre><code contenteditable class='javscript'>
@@ -373,27 +392,25 @@
 	</section>
 
 	<section>
-	<h2>Substitutability</h2>
+	<h3>Substitutability</h3>
 	<div class='left-align'>
-	<p><strong>Substitutability</strong> is a principle of object-oriented programming introduced by BarbaraLiskov in a 1987 conference keynote entitled “Data abstraction and hierarchy”.</p>
+	<p><strong>Substitutability</strong> is a principle of object-oriented programming introduced by BarbaraLiskov in a 1987 conference keynote entitled "Data abstraction and hierarchy".</p>
 	<br/>
 	<p>In a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S without altering any of the desirable properties of that program.</p>
 	</div>
 	</section>
 
 	<section>
-	<h2>Coding exercise 2</h2>
+	<h3>Coding exercise 2</h3>
 	<div class='left-align'>
 		<p>Let's extend our Video to make a MusicVideo! We'll be using another exercise put together by GDI Chicago:</p>
-
-		<p><a target='_blank' href='http://bit.ly/1u91gSM'>
-			<pre style="font-size: 150%">http://bit.ly/1u91gSM</pre>
-		</a></p>
+		<br />
+		<div><a target='_blank' href='http://bit.ly/oojs_ex_2'>http://bit.ly/oojs_ex_2</a></div>
 	</div>
 	</section>
 
 	<section>
-	<h2>Uses for object-oriented programming</h2>
+	<h3>Uses for object-oriented programming</h3>
 	<div class='left-align'>
 		<ul>
 			<li class='fragment'>Model physical concepts more clearly in your code
@@ -405,7 +422,7 @@
 
 
 	<section>
-	<h2>Maintainable code</h2>
+	<h3>Maintainable code</h3>
 	<div class='left-align'>
 		<p>When creating an object using our Car constructor, we have to pass in our arguments in a very specific order: make, then model, then year.</p>
 		<pre class='fragment'><code contenteditable class='javscript'>
@@ -418,7 +435,7 @@
 	</section>
 
 	<section>
-	<h2>A single argument</h2>
+	<h3>A single argument</h3>
 	<div class='left-align'>
 		<p>Replace your <strong>list</strong> of arguments with a <strong>single</strong> argument.</p>
 		<pre><code contenteditable class='javscript'>
@@ -441,7 +458,7 @@
 	</section>
 
 	<section>
-	<h2>Optional default values</h2>
+	<h3>Optional default values</h3>
 	<div class='left-align'>
 		<p>You can also provide <strong>default values</strong> for your arguments within the constructor.</p>
 		<pre><code contenteditable class='javscript'>
@@ -464,18 +481,16 @@
 	</section>
 
 	<section>
-	<h2>Coding exercise 3</h2>
+	<h3>Coding exercise 3</h3>
 	<div class='left-align'>
 		<p>Let's clean up our constructors using what we learned! We'll be using another exercise put together by GDI Chicago:</p>
-
-		<p><a target='_blank' href='http://bit.ly/1qisUpV'>
-			<pre style="font-size: 150%">http://bit.ly/1qisUpV</pre>
-		</a></p>
+		<br />
+		<div><a target='_blank' href='http://bit.ly/oojs_ex_3'>http://bit.ly/oojs_ex_3</a></div>
 	</div>
 	</section>
 
 	<section>
-	<h2>Building HTML with OOJS</h2>
+	<h3>Building HTML with OOJS</h3>
 	<div class='left-align'>
 		<p>You can create objects that know how to interact with your website.</p>
 		<pre><code contenteditable class='javascript'>
@@ -492,7 +507,7 @@
 	</section>
 
 	<section>
-	<h2>Refactoring</h2>
+	<h3>Refactoring</h3>
 	<div class='left-align'>
 		<p>Once your website code is working correctly, it's a good idea to go back and <strong>refactor</strong> it.  Refactoring is a process developers use to restructure their existing code to make it easier to read.</p>
 		<br/>
@@ -501,19 +516,17 @@
 	</section>
 
 	<section>
-	<h2>Coding exercise 4</h2>
+	<h3>Coding exercise 4</h3>
 	<div class='left-align'>
 		<p>Let's refactor some JavaScript using objects! We'll be using another exercise put together by GDI Chicago:</p>
-
-		<p><a target='_blank' href='http://bit.ly/1uif79V'>
-			<pre style="font-size: 150%">http://bit.ly/1uif79V</pre>
-		</a></p>
+		<br />
+		<div><a target='_blank' href='http://bit.ly/oojs_ex_4'>http://bit.ly/oojs_ex_4</a></div>
 	</div>
 	</section>
 
 <!-- Outro -->
 	<section>
-		<h2>Regroup &amp; Recap</h2>
+		<h3>Regroup &amp; Recap</h3>
 		<ul>
 			<li>What did you work on?</li>
 			<li>What was the most challenging part?</li>
@@ -522,7 +535,7 @@
 	</section>
 
 	<section>
-	<h2>What's next?</h2>
+	<h3>What's next?</h3>
 	<div class='left-align'>
 		<ul>
 			<li class='fragment'>Lots of practice!</li>
@@ -539,12 +552,10 @@
 	</section>
 
 	<section>
-		<h2>Thank you for attending!</h2>
+		<h3>Thank you for attending!</h3>
 		<p>Please help us make this class better by completing this short survey:</p>
 		<br/>
-		<p><a target="_blank" href="http://bit.ly/GDI-OOjs">
-			<pre style="font-size: 150%">http://bit.ly/GDI-OOjs</pre>
-		</a></p>
+		<div><a target='_blank' href='http://bit.ly/GDI-OOjs'>http://bit.ly/GDI-OOjs</a></div>
 	</section>
 
 	<!-- End of slides -->
@@ -558,7 +569,6 @@
 </footer>
 
 </div>
-
 
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.min.js"></script>

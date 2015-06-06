@@ -42,6 +42,10 @@ body {
   letter-spacing: -0.02em;
   color: #333333; }
 
+strong {
+	font-family: "Gotham-Bold" !important;
+}
+
 ::selection {
   color: white;
   background: #134674;
