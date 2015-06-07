@@ -112,7 +112,7 @@
 	<div class='left-align'>
 		<p>Goal: Understanding "this"</p>
 		<ul>
-			<li>In HTML, create a link to the website of your choice. Using a JavaScript "onclick" event, make clicking on the link alert the link’s "href".  [Hint: never used the "onclick" event before, and not sure how to use it? Check out w3schools.com for <a href="http://www.w3schools.com/jsref/event_onclick.as">some documentation and examples</a>]</li>
+			<li>In HTML, create a link to the website of your choice. Using a JavaScript "onclick" event, make clicking on the link alert the link’s "href".  [Hint: never used the "onclick" event before, and not sure how to use it? Check out w3schools.com for <a href="http://www.w3schools.com/jsref/event_onclick.asp">some documentation and examples</a>]</li>
 		</ul>
 	</div>
 	</section>
@@ -265,7 +265,7 @@
 	// Extend the prototype to define methods for new Cars
 	Car.prototype.drive = function() {
 	    this.odometer = this.odometer + 1;
-	}
+	};
 
 	// Instantiate a new Car
 	var myCar = new Car();
@@ -294,7 +294,7 @@
 	// lowercase function "drive"? This must be a regular function
 	Car.prototype.drive = function() {
 	    this.odometer = this.odometer + 1;
-	}
+	};
 		</code></pre>
 	</div>
 	</section>
@@ -315,7 +315,7 @@
 	// Extend the prototype to define methods for new cars
 	Car.prototype.drive = function() {
 	    this.odometer = this.odometer + 1;
-	}
+	};
 
 	// Instantiate a new car
 	var myCar = new Car('Volkswagen', 'Rabbit', 2006);
@@ -490,19 +490,16 @@
 	</section>
 
 	<section>
-	<h3>Building HTML with OOJS</h3>
+	<h3>Building real websites</h3>
 	<div class='left-align'>
 		<p>You can create objects that know how to interact with your website.</p>
-		<pre><code contenteditable class='javascript'>
-	// Assuming Car as defined before
-	Car.prototype.displayOnWebsite = function() {
-	    var $carinfo = $('&lt;p&gt;&lt;/p&gt;');
-	    $carinfo.text('You are buying a ' + this.model);
 
-	    var $list = $('#listofcars');
-	    $list.append($carinfo);
-	};
-		</code></pre>
+		<br />
+		<div><a target='_blank' href='http://bit.ly/oojs_example'>http://bit.ly/oojs_example</a></div>
+
+		<br />
+		<p>In a real-world situation, you would probably create your car objects using data imported from a database!</p>
+
 	</div>
 	</section>
 
